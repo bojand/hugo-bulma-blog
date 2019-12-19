@@ -1,5 +1,3 @@
-<!-- <div class="card is-shadowless">
-    <div class="card-content"> -->
 <div style="padding-left: 1em;">
     <h1 class="title is-5">Recent posts</h1>
     {{ range first 5 (where .Site.RegularPages "Section" "post").ByPublishDate.Reverse }}
@@ -7,5 +5,3 @@
     <time class="has-text-grey-light is-size-7">{{ .Date.Day }} {{ .Date.Month }} {{ .Date.Year }}</time>
     {{ end }}
 </div>
-<!-- </div>
-</div> -->
