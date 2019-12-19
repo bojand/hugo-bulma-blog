@@ -1,85 +1,85 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Hugo Themes</title>
-    <link>https://gohugo.io/tags/</link>
+    <link>https://bojand.github.io/hugo-bulma-blog/tags/</link>
     <description>Recent content in Tags on Hugo Themes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://gohugo.io/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://bojand.github.io/hugo-bulma-blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>css</title>
-      <link>https://gohugo.io/tags/css/</link>
+      <link>https://bojand.github.io/hugo-bulma-blog/tags/css/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://gohugo.io/tags/css/</guid>
+      <guid>https://bojand.github.io/hugo-bulma-blog/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>https://gohugo.io/tags/html/</link>
+      <link>https://bojand.github.io/hugo-bulma-blog/tags/html/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://gohugo.io/tags/html/</guid>
+      <guid>https://bojand.github.io/hugo-bulma-blog/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>https://gohugo.io/tags/markdown/</link>
+      <link>https://bojand.github.io/hugo-bulma-blog/tags/markdown/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://gohugo.io/tags/markdown/</guid>
+      <guid>https://bojand.github.io/hugo-bulma-blog/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>https://gohugo.io/tags/themes/</link>
+      <link>https://bojand.github.io/hugo-bulma-blog/tags/themes/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://gohugo.io/tags/themes/</guid>
+      <guid>https://bojand.github.io/hugo-bulma-blog/tags/themes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>privacy</title>
-      <link>https://gohugo.io/tags/privacy/</link>
+      <link>https://bojand.github.io/hugo-bulma-blog/tags/privacy/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://gohugo.io/tags/privacy/</guid>
+      <guid>https://bojand.github.io/hugo-bulma-blog/tags/privacy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shortcodes</title>
-      <link>https://gohugo.io/tags/shortcodes/</link>
+      <link>https://bojand.github.io/hugo-bulma-blog/tags/shortcodes/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://gohugo.io/tags/shortcodes/</guid>
+      <guid>https://bojand.github.io/hugo-bulma-blog/tags/shortcodes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>text</title>
-      <link>https://gohugo.io/tags/text/</link>
+      <link>https://bojand.github.io/hugo-bulma-blog/tags/text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://gohugo.io/tags/text/</guid>
+      <guid>https://bojand.github.io/hugo-bulma-blog/tags/text/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emoji</title>
-      <link>https://gohugo.io/tags/emoji/</link>
+      <link>https://bojand.github.io/hugo-bulma-blog/tags/emoji/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://gohugo.io/tags/emoji/</guid>
+      <guid>https://bojand.github.io/hugo-bulma-blog/tags/emoji/</guid>
       <description></description>
     </item>
     
