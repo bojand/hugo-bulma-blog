@@ -1,0 +1,51 @@
+<br>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/" style="font-weight:bold;">
+                <h1 class="title">{{ .Site.Title }}</h1>
+            </a>
+            <span class="navbar-burger burger" data-target="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </div>
+        {{ if isset .Site.Params "social" }}
+        <div id="navMenu" class="navbar-menu">
+            <div class="navbar-end">
+                {{ range $index, $key := .Site.Params.Social }}
+                <a navbar-item href="{{ $key.url }}">
+                    <i class="icon fab fa-2x fa-{{ $key.icon }} is-medium"
+                        style="color: #A7BED2; margin-right: 10px; margin-top: 5px;">
+                    </i>
+                </a>
+                {{end}}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</nav>
+{{ if isset .Site.Params "subtitle" }}
+<p class="subtitle is-5 has-text-grey">{{ index .Site.Params "subtitle" }}</p>
+{{ else }}
+<br>
+{{ end }}
+</nav>
+
+<div class="tabs is-left">
+    <ul>
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+        <li class="is-active">
+            {{ else }}
+        <li>
+        {{ end }}
+            <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        
+        {{ end }}
+    </ul>
+</div>
+<br>

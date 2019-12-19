@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+<article>
+    <div>
+        <div class="content">
+            <h1 class="title">
+                {{ if eq .Type "tags" }}
+                #{{ .Title }}
+                {{ else if eq .Type "archives" }}
+                Archive {{ .Title }}
+                {{ else }}
+                {{ .Title }}
+                {{ end }}
+            </h1>
+            {{ if or (eq .Type "article") (eq .Type "post") }}
+            <p class="subtitle is-size-6 has-text-grey-light">
+                Published at {{ .Date.Format "January 2, 2006" }} &middot;
+                <i class="far fa-clock"></i>&nbsp;{{ .ReadingTime }} min read
+            </p>
+            {{ end }}
+
+            <br>
+            <div class="content">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+{{ end }}

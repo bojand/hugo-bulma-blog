@@ -1,0 +1,52 @@
+{{ partial "header.html" . }}
+
+<section class="section">
+    <div class="container">
+        <div class="is-child box" style="padding-left: 45px; padding-right: 45px;">
+
+            {{ partial "navbar-hero.html" . }}
+
+            <div class="columns">
+                {{ $showSidebar := false }}
+                {{ if or (eq .Type "post") ( .IsHome )  (eq .Type "tags") (eq .Type "archives") }}
+                  {{ $showSidebar = true }}
+                {{ end }}
+                {{ $mainWidth := "" }}
+                {{ if (eq $showSidebar true) }}
+                {{ if or (eq .Site.Params.tags true) (eq .Site.Params.archives true) (eq .Site.Params.recent true)  (eq .Site.Params.related true) }}
+                    {{ $mainWidth = "is-three-quarters" }}
+                {{ end }}
+                {{ end }}
+                <div class="column {{ $mainWidth }}">
+                    {{ block "main" . }}{{ end }}
+                </div>
+
+                {{ if (eq $mainWidth "is-three-quarters")}}
+                <div class="column is-one-quarter">
+                    {{ if (eq .Site.Params.tags true) }}
+                        {{ partial "widget-tags.html" . }}<br>
+                    {{ end }}
+                    {{ if (eq .Site.Params.recent true) }}
+                        {{ partial "widget-recent.html" . }}<br>
+                    {{ end }}
+                    {{ if (eq .Site.Params.related true) }}
+                        {{ partial "widget-related.html" . }}<br>
+                    {{ end}}
+                    {{ if (eq .Site.Params.archives true) }}
+                        {{ partial "widget-archives.html" . }}<br>
+                    {{ end}}
+                </div>
+                {{ end }}
+            </div>
+
+            {{ partial "footer.html" . }}
+
+        </div>
+    </div>
+</section>
+
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+</body>
+
+</html>
