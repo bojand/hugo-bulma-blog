@@ -1,51 +1,66 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default "en" }}">
+
 {{ partial "header.html" . }}
 
-<section class="section">
-    <div class="container">
-        <div class="is-child box" style="padding-left: 45px; padding-right: 45px;">
+<body>
 
-            {{ partial "navbar-hero.html" . }}
+    <section class="section">
+        <div class="container">
+            <div class="box" style="padding-left: 45px; padding-right: 45px;">
 
-            <div class="columns">
-                {{ $showSidebar := false }}
-                {{ if or (eq .Type "post") ( .IsHome )  (eq .Type "tags") (eq .Type "archives") }}
-                  {{ $showSidebar = true }}
-                {{ end }}
-                {{ $mainWidth := "" }}
-                {{ if (eq $showSidebar true) }}
-                {{ if or (eq .Site.Params.tags true) (eq .Site.Params.archives true) (eq .Site.Params.recent true)  (eq .Site.Params.related true) }}
+                {{ partial "navbar-hero.html" . }}
+
+                <div class="columns">
+                    {{ $showSidebar := false }}
+                    {{ if or (eq .Type "post") ( .IsHome )  (eq .Type "tags") (eq .Type "archives") }}
+                    {{ $showSidebar = true }}
+                    {{ end }}
+                    {{ $mainWidth := "" }}
+                    {{ if (eq $showSidebar true) }}
+                    {{ if or (eq .Site.Params.tags true) (eq .Site.Params.archives true) (eq .Site.Params.recent true)  (eq .Site.Params.related true) }}
                     {{ $mainWidth = "is-three-quarters" }}
-                {{ end }}
-                {{ end }}
-                <div class="column {{ $mainWidth }}">
-                    {{ block "main" . }}{{ end }}
-                </div>
+                    {{ end }}
+                    {{ end }}
+                    <div class="column {{ $mainWidth }}">
+                        {{ block "main" . }}{{ end }}
+                    </div>
 
-                {{ if (eq $mainWidth "is-three-quarters")}}
-                <div class="column is-one-quarter">
-                    {{ if (eq .Site.Params.tags true) }}
+                    {{ if (eq $mainWidth "is-three-quarters")}}
+                    <div class="column is-one-quarter">
+                        {{ if (eq .Site.Params.tags true) }}
                         {{ partial "widget-tags.html" . }}<br>
-                    {{ end }}
-                    {{ if (eq .Site.Params.recent true) }}
+                        {{ end }}
+                        {{ if (eq .Site.Params.recent true) }}
                         {{ partial "widget-recent.html" . }}<br>
-                    {{ end }}
-                    {{ if (eq .Site.Params.related true) }}
+                        {{ end }}
+                        {{ if (eq .Site.Params.related true) }}
                         {{ partial "widget-related.html" . }}<br>
-                    {{ end}}
-                    {{ if (eq .Site.Params.archives true) }}
+                        {{ end}}
+                        {{ if (eq .Site.Params.archives true) }}
                         {{ partial "widget-archives.html" . }}<br>
-                    {{ end}}
+                        {{ end}}
+                    </div>
+                    {{ end }}
                 </div>
-                {{ end }}
+
+                <br>
+
             </div>
-
-            <br>
-
         </div>
-    </div>
-</section>
+    </section>
 
-<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script type="text/javascript">
+        (function () {
+            var burger = document.querySelector('.burger');
+            var nav = document.querySelector('#' + burger.dataset.target);
+            burger.addEventListener('click', function () {
+                burger.classList.toggle('is-active');
+                nav.classList.toggle('is-active');
+            });
+        })();
+    </script>
 
 </body>
 

@@ -12,24 +12,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css" />
     <link rel="stylesheet" href="https://bojand.github.io/hugo-bulma-blog/css/blog.css" />
     
-    
-    <link href="https://bojand.github.io/hugo-bulma-blog/index.xml" rel="alternate" type="application/rss+xml" title="Hugo Themes" />
-    <link href="https://bojand.github.io/hugo-bulma-blog/index.xml" rel="feed" type="application/rss+xml" title="Hugo Themes" />
-    
-    
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
 
+    <section class="section">
+        <div class="container">
+            <div class="box" style="padding-left: 45px; padding-right: 45px;">
 
-
-<section class="section">
-    <div class="container">
-        <div class="is-child box" style="padding-left: 45px; padding-right: 45px;">
-
-            <br>
+                <br>
 <nav class="navbar">
     <div class="container">
         <div class="navbar-brand">
@@ -110,19 +103,19 @@
 </div>
 <br>
 
-            <div class="columns">
-                
-                
-                  
-                
-                
-                
-                
+                <div class="columns">
                     
-                
-                
-                <div class="column is-three-quarters">
                     
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <div class="column is-three-quarters">
+                        
 
 
 
@@ -167,11 +160,11 @@
     </nav>
 </p>
 
-                </div>
+                    </div>
 
-                
-                <div class="column is-one-quarter">
                     
+                    <div class="column is-one-quarter">
+                        
                         <div style="padding-left: 1em;">
     <h1 class="title is-5">Tags</h1>
     <div class="tags">
@@ -194,8 +187,8 @@
         
     </div>
 </div><br>
-                    
-                    
+                        
+                        
                         <div style="padding-left: 1em;">
     <h1 class="title is-5">Recent posts</h1>
     
@@ -215,31 +208,41 @@
     <time class="has-text-grey-light is-size-7">5 March 2019</time>
     
 </div><br>
-                    
-                    
+                        
+                        
                         
 
 <br>
-                    
-                    
+                        
+                        
                         <div style="padding-left: 1em;">
     <h1 class="title is-5">Archives</h1>
     
     <a href="https://bojand.github.io/hugo-bulma-blog/archives/March%202019">March 2019</a> (5)<br>
     
 </div><br>
+                        
+                    </div>
                     
                 </div>
-                
+
+                <br>
+
             </div>
-
-            <br>
-
         </div>
-    </div>
-</section>
+    </section>
 
-<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script type="text/javascript">
+        (function () {
+            var burger = document.querySelector('.burger');
+            var nav = document.querySelector('#' + burger.dataset.target);
+            burger.addEventListener('click', function () {
+                burger.classList.toggle('is-active');
+                nav.classList.toggle('is-active');
+            });
+        })();
+    </script>
 
 </body>
 

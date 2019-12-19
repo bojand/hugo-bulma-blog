@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>text on Hugo Themes</title>
@@ -8,7 +9,7 @@
     <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
     <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://bojand.github.io/hugo-bulma-blog/tags/text/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bojand.github.io/hugo-bulma-blog/tags/text/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
